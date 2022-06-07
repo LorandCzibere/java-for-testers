@@ -13,11 +13,23 @@ public class HelloWorldWriterTest {
     @Test
     public void declaringNumericalVariables() {
 
-        int ageThisYear = 30;
+        final int ageThisYear = 30;
 
         int ageNextYear = ageThisYear + 1;
 
+        double weight = 15.5;
+
         System.out.println("age = " + ageNextYear);
 
+    }
+
+    @Test
+    public void workingWithString() {
+
+        String firstName = " Sarah-Jane ";
+
+        String upperCaseFirstName = firstName.replace("Sarah", "Mary");
+
+        System.out.println(firstName.trim());
     }
 }
